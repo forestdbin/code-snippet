@@ -1,0 +1,64 @@
+"  1 important
+"  2 moving around, searching and patterns
+set nowrapscan
+set incsearch
+set ignorecase
+set smartcase
+
+"  3 tags
+"  4 displaying text
+set scrolloff=2
+set nowrap
+" set sidescrolloff=2
+" set list
+set listchars=tab:>.,eol:$
+" set number
+
+"  5 syntax, highlighting and spelling
+" set background=light
+" set hlsearch
+" set cursorcolumn
+" set cursorline
+set colorcolumn=80
+
+"  6 multiple windows
+"  7 multiple tab pages
+"  8 terminal
+"  9 using the mouse
+" set mouse=a
+
+" 10 printing
+" 11 messages and info
+set showcmd
+set showmode
+set ruler
+
+" 12 selecting text
+" 13 editing text
+" 14 tabs and indenting
+set tabstop=8
+set shiftwidth=4
+set smarttab
+set softtabstop=4
+set shiftround
+set expandtab
+set autoindent
+set smartindent
+set cindent
+
+" 15 folding
+" 16 diff mode
+" 17 mapping
+" 18 reading and writing files
+" set modeline
+
+" 19 the swap file
+" 20 command line editing
+set wildmode=list:longest
+
+" 21 executing external commands
+" 22 running make and jumping to errors
+" 23 language specific
+" 24 multi-byte characters
+" 25 various
+" set eventignore=all
