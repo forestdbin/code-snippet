@@ -2,6 +2,10 @@
 
 # GLib Core Application Support
 
+## Warnings and Assertions
+
+assert
+
 ## Message Output and Debugging Functions
 
 debug
