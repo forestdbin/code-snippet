@@ -1,0 +1,11 @@
+$ G_MESSAGES_DEBUG=all ./glib_debug
+** (process:3801): DEBUG: This is a debug message
+** INFO: This is an info message
+** Message: This is a normal message
+
+** (process:3801): WARNING **: This is a warning message
+
+** (process:3801): CRITICAL **: This is a critical message
+
+** (process:3801): ERROR **: This is an error message
+Trace/breakpoint trap (core dumped)
