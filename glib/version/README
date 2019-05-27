@@ -1,0 +1,5 @@
+$ ./glib_version
+** Message: The GLib header is 2.48.2
+** Message: The GLib header is compatible
+** Message: The GLib runtime is 2.48.2
+** Message: The GLib runtime is compatible

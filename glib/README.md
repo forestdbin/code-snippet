@@ -1,5 +1,9 @@
 # GLib Fundamentals
 
+## Version Information
+
+version
+
 # GLib Core Application Support
 
 ## Warnings and Assertions
