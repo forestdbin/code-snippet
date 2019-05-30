@@ -6,6 +6,10 @@ version
 
 # GLib Core Application Support
 
+## The Main Event Loop
+
+mainloop
+
 ## Warnings and Assertions
 
 assert
