@@ -10,6 +10,10 @@ version
 
 mainloop
 
+## Threads
+
+thread
+
 ## Warnings and Assertions
 
 assert
