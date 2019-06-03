@@ -14,6 +14,10 @@ mainloop
 
 thread
 
+## Thread Pools
+
+threadpool
+
 ## Warnings and Assertions
 
 assert
