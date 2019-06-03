@@ -18,6 +18,10 @@ thread
 
 threadpool
 
+## Asynchronous Queues
+
+asyncq
+
 ## Warnings and Assertions
 
 assert
