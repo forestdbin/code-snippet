@@ -1,0 +1,10 @@
+$ ./glib_string
+** Message: This sample demonstrates the string utility.
+** Message: This is a duplication of hello, world.
+** Message: This is a duplication of hello, world.
+** Message: This is a duplication of bye, world.
+** Message: * repeats 10 times: **********
+** Message: This is the concatenating of hello, world.
+** Message: hello, world.
+hello, world.
+** Message: .dlrow ,olleh

@@ -32,4 +32,8 @@ debug
 
 # GLib Utilites
 
+## String Utility Functions
+
+string
+
 # GLib Data Types
