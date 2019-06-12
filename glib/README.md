@@ -36,4 +36,8 @@ debug
 
 string
 
+## Base64 Encoding
+
+base64
+
 # GLib Data Types
