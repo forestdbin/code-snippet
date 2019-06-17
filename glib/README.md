@@ -44,4 +44,8 @@ base64
 
 checksum
 
+## Secure HMAC Digests
+
+hmac
+
 # GLib Data Types

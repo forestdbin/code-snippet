@@ -1,0 +1,17 @@
+$ ./glib_hmac 
+** Message: HMAC(MD5) for "hello, world." with key(123456) is:
+e00437203a1bace52f07b1e655ae34e4
+** Message: HMAC(MD5) for "hello, world." with key(654321) is:
+e80794d293908464a7ebdef211f3ca1d
+** Message: HMAC(SHA-1) for "hello, world." with key(123456) is:
+b7dab5261ecc1b3821a721d4c0c9b654499e1edb
+** Message: HMAC(SHA-1) for "hello, world." with key(654321) is:
+355da8b44cebb0ba436c7ad918f2f3c189486138
+** Message: HMAC(SHA-256) for "hello, world." with key(123456) is:
+07f6cfb9c8bd403c750b0b13f27d420d63ff340b5fe5efc32d3e22cbb10284be
+** Message: HMAC(SHA-256) for "hello, world." with key(654321) is:
+40abece73bccb7120d31098fb5b861cdf7bcc1f42da22afbc61cdb176ab2c1a3
+** Message: HMAC(SHA-512) for "hello, world." with key(123456) is:
+f720d08f5e90545e38b1be61cdaef45385d011d76a21453f2c3ba0fb388d8a90d02eab35f0305d8804e43a919a03dcd354c895b3bb4e390094e50e2e2d6fe618
+** Message: HMAC(SHA-512) for "hello, world." with key(654321) is:
+f8dee073d7848c8d65e98e45da8d2a79d38abe56f24b088ce03dbaf3c5b5df648d15e1fe758aeffc3b48036f84da4cb381b1884dc1ef10178fef7ed4ce3e8490
