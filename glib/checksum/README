@@ -1,0 +1,13 @@
+$ ./glib_checksum 
+** Message:     MD5 has 16 bytes of digests
+** Message:   SHA-1 has 20 bytes of digests
+** Message: SHA-256 has 32 bytes of digests
+** Message: SHA-512 has 64 bytes of digests
+** Message:     MD5 digest for "hello, world." is:
+708171654200ecd0e973167d8826159c
+** Message:   SHA-1 digest for "hello, world." is:
+a1a6bb411bac18fc1d0c88eba5a841d0498ea6cf
+** Message: SHA-256 digest for "hello, world." is:
+df4f2d5707fd85996a13aab607eb3f6b19d0e99d97281d5eae68a6c16317a329
+** Message: SHA-512 digest for "hello, world." is:
+d02b25c6e56150b84089e388fc798437fb94fb0992d8b1566ec64da4bc14ded263c6046058734b302215636db46c05b4b9778692a56c0ed847b65123d74392b3

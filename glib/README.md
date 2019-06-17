@@ -40,4 +40,8 @@ string
 
 base64
 
+## Data Checksums
+
+checksum
+
 # GLib Data Types
