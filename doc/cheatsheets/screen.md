@@ -31,7 +31,7 @@ c   screen              # new window
 "   windowlist -b       # list all windows for selection
 0   select 0            # switch to window 0
 
--  select -            # switch to blank window
+-   select -            # switch to blank window
 '   select              # prompt for a window
 n   next                # (space) next window
 p   prev                # (backspace,^H) previous window
@@ -62,4 +62,21 @@ Z   reset               # reset virtual terminal
 
 [   copy                # (esc) enter copy/scrollback mode
 ]   paste .             # paste
+```
+
+## tips
+
+### show current session
+
+```
+$ echo $STY
+9774.screen
+```
+
+### always show window list
+
+```
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%w"
 ```
