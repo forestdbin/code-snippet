@@ -60,3 +60,12 @@ t   # show time
 =   # choose paste buffer interactively
 -   # delete latest buffer
 ```
+
+## tips
+
+### set repeat time
+
+```
+$ tmux show-options -g repeat-time
+$ tmux set-option -g repeat-time 250
+```
