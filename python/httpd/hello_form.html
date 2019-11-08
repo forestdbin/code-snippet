@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <title>hello</title>
+<script>
+function validate() {
+    return document.forms['hello']['name'].value.length != 0;
+}
+</script>
+    </head>
+
+    <body>
+        <form name='hello' action='bin/hello_form.py' onsubmit='return validate();'>
+            Your name:
+            <input type='text' name='name'><br>
+            <input type='submit' value='Hello'>
+        </form>
+        <p><a href='/'>home</a>
+    </body>
+</html>
