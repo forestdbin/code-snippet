@@ -1,0 +1,3 @@
+$ pip3 install -r bottle.pip
+$ python3 hello.py
+http://localhost:8000/hello/world
