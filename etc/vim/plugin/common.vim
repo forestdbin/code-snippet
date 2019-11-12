@@ -12,3 +12,5 @@ autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType * setlocal formatoptions-=cro
 
 packadd! matchit
+
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
