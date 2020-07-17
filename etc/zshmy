@@ -1,0 +1,21 @@
+# if [ -f ~/.zshmy ]
+# then
+#     . ~/.zshmy
+# fi
+
+PS1='%F{red}%#%f '
+
+alias d='dirs -v'
+alias p=pushd
+alias q=popd
+
+alias v=vim
+
+alias ls='ls -G'
+alias l='ls -F'
+alias la='ls -A'
+alias ll='ls -l'
+alias l1='ls -1'
+alias l.='ls -d .*'
+
+alias grep='grep --color=auto'
