@@ -1,2 +1,3 @@
 #var
-scroll-behavior=Page Only
+#scroll-behavior=Page Only
+cursor-movement-scrolls=Off
