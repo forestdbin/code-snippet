@@ -16,7 +16,7 @@ set listchars=tab:>.,eol:$
 
 "  5 syntax, highlighting and spelling
 " set background=light
-" set hlsearch
+set hlsearch
 " set cursorcolumn
 " set cursorline
 set colorcolumn=80
@@ -25,7 +25,8 @@ set colorcolumn=80
 "  7 multiple tab pages
 "  8 terminal
 "  9 using the mouse
-" set mouse=a
+set mouse=a
+set ttymouse=xterm2
 
 " 10 printing
 " 11 messages and info
