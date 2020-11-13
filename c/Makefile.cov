@@ -25,11 +25,21 @@ $(program) : $(program_objs)
 
 # %.o : %.c
 
+# gcov -k -l -m -r -n foo.cpp
+# gcov -k -l -m -r -t foo.cpp | less -R
+# gcov -k -l -m -r foo.cpp
+# gcov -m -r *.cpp
 gcov : $(program)
 	./$(program)
 	gcov $(program)
 	cat *.gcov
 
+# lcov -c -d . -o lcov.info --no-recursion
+# lcov -l lcov.info
+# [ -d lcov ] && rm -rf lcov/* || mkdir lcov
+# genhtml -o lcov lcov.info
+# python3 -m http.server --directory lcov
+# rm -rf lcov.info lcov
 lcov : gcov
 	lcov -c -d . -o $(program).info
 	lcov -l $(program).info
@@ -37,6 +47,12 @@ lcov : gcov
 	genhtml $(program).info -o output
 	# cd output && python3 -m http.server
 
+# gcovr -s --exclude-directories test
+# gcovr -b
+# [ -d gcovr ] && rm -rf gcovr/* || mkdir gcovr
+# gcovr --html --html-details -o gcovr/index.html
+# python3 -m http.server --directory gcovr
+# rm -rf gcovr
 gcovr : gcov
 	[ -d output ] && rm -rf output/* || mkdir output
 	gcovr -r .
