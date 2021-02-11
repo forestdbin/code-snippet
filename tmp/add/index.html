@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>加法练习</title>
+  <script>
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+  return array;
+}
+
+function getAllAdditions() {
+  var result = [];
+  for (var i = 0; i < 21; i++) {
+    for (var j = 0; j < 21 - i; j++) {
+      result.push([i, j]);
+    }
+  }
+  return shuffle(result).slice(0, 20);
+}
+
+  </script>
+  <style type="text/css">
+span {
+  display: inline-block;
+  width: 20px;
+  text-align: right;
+}
+
+.result {
+  width: 40px;
+  border: none;
+  border-bottom: solid;
+  border-width: 1px;
+  outline-width: 0;
+  margin-left: 1em;
+}
+  </style>
+</head>
+
+<body>
+  <h1>20以内的加法练习</h1>
+  <script>
+var additions = getAllAdditions();
+additions.forEach(function (addition) {
+  document.writeln(`
+<div class=addition>
+  <span class=op1>${addition[0]}</span>
+  <span>+</span>
+  <span class=op2>${addition[1]}</span>
+  <span>=</span>
+  <input class=result type="text">
+</div>
+  `);
+});
+document.writeln(`<input type="button" value="做完了" id="submit">`);
+document.getElementById("submit").onclick = function () {
+  var additions = document.getElementsByClassName("addition");
+  for (const addition of additions) {
+    var op1 = parseInt(addition.getElementsByClassName("op1")[0].innerHTML);
+    var op2 = parseInt(addition.getElementsByClassName("op2")[0].innerHTML);
+    var result = addition.getElementsByClassName("result")[0];
+    var isCorrect = op1 + op2 == parseInt(result.value);
+    result.style.backgroundColor = isCorrect ? "#00800080" : "#ff000080";
+  };
+};
+  </script>
+</body>
+</html>
