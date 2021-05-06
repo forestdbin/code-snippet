@@ -16,3 +16,14 @@ target_link_options(
     ${PROJECT_NAME}
     PUBLIC -pthread
 )
+
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(GLIB glib-2.0)
+target_include_directories(
+    ${PROJECT_NAME}
+    PRIVATE ${GLIB_INCLUDE_DIRS}
+)
+target_link_libraries(
+    ${PROJECT_NAME}
+    PRIVATE ${GLIB_LIBRARIES}
+)

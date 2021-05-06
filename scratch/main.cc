@@ -1,6 +1,6 @@
 int main()
 {
-    puts("hello, world.");
+    g_print("hello, world.\n");
 
     return 0;
 }
