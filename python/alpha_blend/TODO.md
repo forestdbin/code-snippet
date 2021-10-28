@@ -1,0 +1,7 @@
+- Study the tk class hierarchy
+- Adjust the initial position in screen
+- Flexible layout
+- Use latex, the external command or lib to generate formula
+- Canvas double buffer
+- Use advanced/fancy control, such as slide
+- Input validation and exception free
