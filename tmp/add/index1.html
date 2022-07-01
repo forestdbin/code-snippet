@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>加法练习</title>
+  <style>
+    .result {
+      width: 40px;
+      border: none;
+      border-bottom: solid;
+      border-width: 1px;
+      outline-width: 0;
+    }
+  </style>
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+  <h1>加法练习</h1>
+  <div id="app">
+    <item v-for="item in items" :item="item" ref="item"></item>
+    <input type="button" value="做完了" id="submit" @click="check()">
+  </div>
+
+  <script>
+    const root = {
+      data() {
+        return {
+        };
+      },
+      computed: {
+        items() {
+          function getRandomArbitrary(min, max) {
+            return Math.floor(Math.random() * (max - min) + min);
+          };
+          function getOperator() {
+            return getRandomArbitrary(100, 999);
+          };
+          result = [];
+          for (var i = 0; i < 20; i++) {
+            var op1 = getOperator();
+            var op2 = getOperator();
+            result.push({ text: `${op1} + ${op2} = `, result: op1 + op2 });
+          }
+          return result;
+        },
+      },
+      methods: {
+        check() {
+          this.$refs.item.forEach(i => i.check());
+        }
+      },
+    };
+
+    const app = Vue.createApp(root);
+
+    app.component("item", {
+      props: ['item'],
+      template: `
+      <div>
+        {{ item.text }}<input class=result ref="result" type="text">
+      </div>
+      `,
+      methods: {
+        check() {
+          var r = this.$refs.result;
+          if (r.value == this.item.result) {
+            r.style.backgroundColor = "#00800080";
+          } else {
+            r.style.backgroundColor = "#ff000080";
+          };
+        },
+      },
+    });
+
+    app.mount("#app");
+  </script>
+</body>
+
+</html>
