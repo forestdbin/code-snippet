@@ -1,9 +1,17 @@
 # c & c++ development
 
+## 0. language
+
+* class
+* template
+
 ## 1. compiler
 
 * gcc/g++
 * clang/llvm
+
+* preprocessor
+* linker
 
 ## 2. library
 
@@ -23,6 +31,7 @@
 
 * make
 * cmake
+* bazel
 * autotools: autoconf, automake, libtool
 
 ## 4. unit test
@@ -32,6 +41,7 @@
 ## 5. debugger
 
 * gdb
+* lldb
 
 ## 6. lint gcov gprof valgrind
 
@@ -39,17 +49,21 @@
 * gcov
 * gprof
 * valgrind
+* trace tool
+* sanitizer
+* static analysis tool
+* fuzzer
 
 ## 7. editor
 
 * vim
-    * viewer
-    * outliner
-    * ctags
-    * cscope
+  * viewer
+  * outliner
+  * ctags
+  * cscope
 * emacs
 * indent
-    * astyle
+  * astyle
 
 ## 8. code browser/insight
 
@@ -65,7 +79,9 @@
 ## 10. scm
 
 * package manager
+  * vcpkg
+  * conan
+  * apt
 * git
 * jekins
 * robot
-
